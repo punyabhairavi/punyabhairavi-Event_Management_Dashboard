@@ -1,0 +1,152 @@
+/* Task Container */
+.task-container {
+    padding: 60px;
+    max-width: 600px;
+    width: 100%;
+    background-color: #353c4e; /* Card background */
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: white;
+  }
+  
+  /* Progress Bar */
+  .progress-bar {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 20px;
+    overflow: hidden;
+    font-size: bold;
+    margin: 20px 0;
+  }
+  
+  .progress {
+    height: 20px;
+    background-color: #4caf50;
+    text-align: center;
+    line-height: 20px;
+    color: white;
+    font-size: 14px;
+    transition: width 0.4s ease;
+  }
+  
+  /* Task Form */
+  .task-form {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .task-form input {
+    padding: 10px;
+    font-size: 14px;
+    flex: 1;
+    max-width: 250px;
+    border: 2px solid black;
+    border-radius: 5px;
+    color: black;
+  }
+  
+  .task-form button {
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .task-form button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Event Selector Input and Button */
+  .event-selector input {
+    padding: 10px;
+    font-size: 14px;
+    flex: 1;
+    max-width: 250px;
+    border: 2px solid black;
+    border-radius: 5px;
+    color: black;
+    margin-right: 10px;
+  }
+  
+  .event-selector button {
+    margin: 15px;
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .event-selector button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Task List */
+  .task-list {
+    list-style-type: none;
+    padding: 0px;
+    margin-top: 20px;
+    color: white;
+    margin-left:10px;
+    /* margin-right: 10px; */
+  }
+  
+  .task-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px ;
+    border-bottom: 1px solid #ccc;
+    color: white;
+  }
+  
+  .task-item .toggle-btn {
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px ;
+    margin-left: 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .task-item .toggle-btn:hover {
+    background-color: #e68900;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .task-container {
+      padding: 20px;
+    }
+  
+    .task-form {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .task-item {
+      flex-direction: column;
+      text-align: left;
+    }
+  
+    .toggle-btn {
+      margin-top: 10px;
+      width: 100%;
+    }
+  
+    .task-form button {
+      width: 100%;
+    }
+  }
+  

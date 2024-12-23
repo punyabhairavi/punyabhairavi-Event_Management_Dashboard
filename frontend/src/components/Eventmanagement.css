@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black; /* Light background */
+    display: flex;
+    justify-content: center; /* Horizontally centers the content */
+    align-items: center; /* Vertically centers the content */
+    height: 100vh; /* Full viewport height */
+    font-family: Arial, sans-serif;
+    color: white; /* Ensures text is readable */
+    margin-top: 60px; /* Adjust this value to match the navbar height */
+}
+
+/* Event Container */
+.event-container {
+    padding: 50px;
+    max-width: 1000px;
+    width: 100%;
+    background-color: #353C4E; /* Light background for contrast */
+    border-radius: 12px; /* Rounded corners for the card */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow effect for the card */
+    text-align: center; /* Center text inside the container */
+    color: white;
+    font-weight: bold;
+}
+
+/* Event Form */
+.event-form {
+    padding-top: 40px;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center; /* Center form elements */
+    margin-bottom: 20px;
+    color: black;
+}
+
+.event-form input {
+    padding: 10px;
+    font-size: 14px;
+    flex: 1;
+    max-width: 200px; /* Limits the width of form fields */
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.event-form button {
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: #4CAF50;
+    color: black;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.event-form button:hover {
+    background-color: #45a049;
+}
+
+/* Event List */
+.event-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Spacing between cards */
+    justify-content: center; /* Centers the cards */
+}
+
+.event-item {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for card effect */
+    width: 250px; /* Fixed width for uniformity */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left; /* Aligns text inside the card */
+}
+
+.event-item h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.event-item p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Delete Button */
+.delete-btn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.delete-btn:hover {
+    background-color: #e53935;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Event Form */
+    .event-form {
+        flex-direction: column;
+        gap: 20px; /* Add more gap for better spacing */
+        align-items: center;
+    }
+
+    .event-item {
+        width: 100%; /* Full-width cards on smaller screens */
+        margin-bottom: 20px; /* Add some spacing between cards */
+    }
+
+    .event-list {
+        justify-content: flex-start; /* Align the cards to the left */
+    }
+
+    .event-form button {
+        width: 100%; /* Full-width button */
+    }
+}
